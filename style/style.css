@@ -8,3 +8,51 @@
   font-weight: 400;
   font-style: normal;
 }
+/* default styles */
+*{
+    margin: 0;
+}
+.container{
+    width: 90%;
+    margin: 5rem auto;
+    border-radius: 1rem;
+}
+h3{
+    font-size: 36px;
+    text-align: center;
+    font-weight: 800;
+}
+.span{
+    color: rgb(255, 84, 0);
+}
+.item{
+    font-size: 1rem;
+    font-weight: 600;
+}
+/* nav bar */
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 280px;
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 45px;
+    height: 56px;
+    margin-right: 1rem;
+
+}
+.nav-option{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 5rem;
+    
+}
+.nav-option p a{
+    text-decoration: none;
+}
