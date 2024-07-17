@@ -29,6 +29,9 @@ h3{
     font-size: 1rem;
     font-weight: 600;
 }
+.text-align{
+    text-align: center;
+}
 /* nav bar */
 .nav-bar{
     display: flex;
@@ -55,4 +58,53 @@ h3{
 }
 .nav-option p a{
     text-decoration: none;
+}
+/* banner section   */
+.explore-container{
+background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%),
+url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+padding: 7rem 0;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+.explore-container h3,p{
+    color: white;
+}
+.travel-input{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 600px;
+    height: 2rem;
+    margin: 1rem auto;
+    padding: 10px;
+}
+.travel-input input{
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 8px;
+    margin-right: 5px;
+    width: 120px;
+    color: rgba(19, 19, 24, 0.5);
+}
+.option{
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 8px;
+    margin-right: 5px;
+    width: 120px;
+    color: rgba(19, 19, 24, 0.5);
+}
+.btn-primary{
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    padding: 8px;
+    margin-right: 5px;
+    width: 120px;
+    background-color:  rgb(255, 84, 0);
+    color: white;
+
 }
