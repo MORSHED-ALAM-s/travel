@@ -63,6 +63,9 @@ h3{
 .white{
     color: white;
 }
+.humbarger{
+    display: none;
+}
 /* banner section   */
 .explore-container{
 background: linear-gradient(180.00deg, rgba(19, 19, 24, 0.8),rgba(19, 19, 24, 0) 100%),
@@ -74,6 +77,7 @@ background-size: cover;
 border-radius: 1rem;
 }
 .travel-input{
+    display: flex;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.3);
     width: 600px;
@@ -117,9 +121,13 @@ border-radius: 1rem;
     grid-template-columns: auto auto;
     gap: 50px;
 }
+.tours-img img{
+    width: 100%;
+    height: 100%;
+}
 .tours-description{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    flex-direction: 1fr 1fr;
     row-gap: 1rem;
 }
 .tours-description p, .tours-description li{
@@ -173,4 +181,49 @@ border-radius: 1rem;
 }
 .social i{
     text-align: center;
+}
+/* resposive */
+@media screen and (max-width:576px) {
+    .nav-option{
+        display: none;
+    }
+    .humbarger{
+        display: block;
+    }
+    .humbarger i{
+        font-size: 26px;
+    }
+    h3{
+        font-size: 26px;
+    }
+    .container{
+        margin: 3rem auto;
+    }
+    p{
+        font-size: 16px;
+    }
+    .explore-container h3{
+        font-size: 26px;
+    }
+    .explore-container p{
+        width: 100%;
+        text-align:center;
+    }
+    .travel-input{
+        height: 100%;
+        flex-direction: column;
+        width: 70%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .travel-input input,
+    .travel-input select,
+    .travel-input button{
+        width: 50%;
+        margin: 0.5rem 0;
+    }
+    .tours-container,.row-1, .row-2,.row-3{
+        grid-template-columns: 1fr;
+    }
 }
